@@ -17,7 +17,7 @@ export const users = pgTable("users", {
     clerkUserId: text("clerk_user_id").notNull().unique(),
     email: text("email").notNull().default(""),
     displayName: text("display_name"),
-    role: text("role").$type<UserRole>().notNull().default("Customer"),
+    role: text("role").$type<UserRole>().notNull().default("customer"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),  
 
