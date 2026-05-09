@@ -6,8 +6,8 @@ import { listProducts, getCategories, getProductBySlug } from "../controllers/pr
 const router = Router();
 
 router.get("/" ,listProducts);
-router.get("/categories" ,getCategories)
-router.get("/:slug" ,getProductBySlug)
+router.get("/categories" ,getCategories);
+router.get("/:slug" ,getProductBySlug);
 
 
 
