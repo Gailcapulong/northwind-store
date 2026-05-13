@@ -8,7 +8,8 @@
     "start": "node --import ./src/instrument.ts dist/index.js",
     "drizzle:generate": "drizzle-kit generate:pg --out ./drizzle --schema ./src/db/schema.ts",
     "drizzle:push": "drizzle-kit push:pg --schema ./src/db/schema.ts",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "db:seed": "tsx scripts/seed.ts"
   },
   "keywords": [],
   "author": "",
